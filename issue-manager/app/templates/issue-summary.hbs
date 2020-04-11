@@ -1,0 +1,21 @@
+<div class="issueSummaryTable">
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Date</th>
+      <th>Description</th>
+    </tr>
+    {{#each model as |issue|}}
+    <tr>
+      <td>
+        {{#link-to "issue-view" issue}}
+        {{issue.title}}
+        {{/link-to}}
+      </td>
+      <td>{{issue.createDateFormatted}}</td>
+      <td>{{issue.description}}</td>
+    </tr>
+    <!-- {issue-row issue=issueIndex }} -->
+    {{/each}}
+  </table>
+</div>

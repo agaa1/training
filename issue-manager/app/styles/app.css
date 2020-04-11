@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+}
+
+.heading {
+  background-color: #80a0ff;
+  top: 0;
+  height: 100px;
+
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.heading h1 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+
+.sideBar {
+  background-color: #a0c0ff;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+}
+
+.sideBar h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sideBarButtonWrapper {
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.sideBarButtonWrapper .sideBarLink {
+  line-height: 30px;
+}
+
+.mainPage {
+  margin-left: 200px;
+  padding: 10px;
+}
+
+.mainPage .issueSummaryTable table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.mainPage .issueSummaryTable th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: left;
+}
+
+.mainPage .issueSummaryTable td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
