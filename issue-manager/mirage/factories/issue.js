@@ -11,7 +11,7 @@ export default Factory.extend({
     return faker.lorem.paragraph();
   },
 
-  createdAt() {
+  createDate() {
     return faker.date.recent(14);
   }
 

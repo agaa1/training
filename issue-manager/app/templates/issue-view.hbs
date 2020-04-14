@@ -1,5 +1,26 @@
 <div class="issueView">
   <h1>{{model.title}}</h1>
-  <p>ID: {{model.id}}</p><br/>
-  <p>Description: {{model.description}}</p>
+  <br/><hr/><br/>
+  <div class="labels">
+    <p>
+      <span class="label">ID:</span>
+    </p>
+    <p>
+      <span class="label">Date Created:</span>
+    </p>
+    <p>
+      <span class="label">Description:</span>
+    </p>
+  </div>
+  <div class="texts">
+    <p>
+      <span class="text">{{model.id}}</span>
+    </p>
+    <p>
+      <span class="text">{{model.createDate}}</span>
+    </p>
+    <p>
+      <span class="text">{{model.description}}</span>
+    </p>
+  </div>
 </div>

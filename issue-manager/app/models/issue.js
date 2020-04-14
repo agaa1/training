@@ -5,13 +5,13 @@ export default DS.Model.extend({
 
   title: DS.attr('string'),
   description: DS.attr('string'),
-  createdAt: DS.attr('date'),
+  createDate: DS.attr('date'),
 
-  createDateFormatted: computed('createdAt', function() {
-    let createdDate = this.get('createdAt');
-    let day = createdDate.getDate();
-    let month = createdDate.getMonth() + 1;
-    let year = createdDate.getFullYear() % 100;
+  createDateFormatted: computed('createDate', function() {
+    let createDate = this.get('createDate');
+    let day = createDate.getDate();
+    let month = createDate.getMonth() + 1;
+    let year = createDate.getFullYear() % 100;
     if(day <10) {
       day = '0' + day;
     }

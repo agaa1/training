@@ -28,7 +28,7 @@ export default function() {
   });
 
   this.get('/issues/:id', (schema, request) => {
-    return schema.issues.find(request.id);
+    return schema.issues.find(request.params.id);
   });
 
 }

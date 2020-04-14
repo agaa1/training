@@ -63,3 +63,16 @@
   border-collapse: collapse;
   padding: 5px;
 }
+
+.mainPage .issueView .labels {
+  color: blue;
+  width: auto;
+  float: left;
+  margin-right: 20px;
+}
+
+.mainPage .issueView .texts {
+  color: red;
+  width: auto;
+  float: left;
+}
