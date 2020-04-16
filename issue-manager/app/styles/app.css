@@ -66,13 +66,14 @@
 
 .mainPage .issueView .labels {
   color: blue;
-  width: auto;
+  /* inline-block makes the div only take as much horizontal space as the text inside needs it to */
+  display: inline-block;
   float: left;
   margin-right: 20px;
 }
 
 .mainPage .issueView .texts {
   color: red;
-  width: auto;
-  float: left;
+  /* overflow ensures the div doesn't intrude on the horizontal space the .labels div is taking up */
+  overflow: auto;
 }
