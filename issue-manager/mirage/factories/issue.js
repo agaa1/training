@@ -8,7 +8,7 @@ export default Factory.extend({
   },
 
   description() {
-    return faker.lorem.paragraph();
+    return faker.lorem.paragraph() + " " +  faker.lorem.paragraph();
   },
 
   createDate() {

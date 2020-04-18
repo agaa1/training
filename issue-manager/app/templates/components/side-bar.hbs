@@ -1,6 +1,6 @@
-<h3>Side Bar</h3>
+<h3 data-test={{hook "sb-title"}}>Side Bar</h3>
 <div class="sideBarButtonWrapper">
-  {{#link-to "index" class="sideBarLink"}}Home{{/link-to}}<br/>
-  {{#link-to "issue-summary" class="sideBarLink"}}Summary{{/link-to}}<br/>
-  {{#link-to "about" class="sideBarLink"}}About{{/link-to}}<br/>
+  {{#link-to "index" class="sideBarLink" hook="sb-home"}}Home{{/link-to}}<br/>
+  {{#link-to "issue-summary" class="sideBarLink" hook="sb-summary"}}Summary{{/link-to}}<br/>
+  {{#link-to "about" class="sideBarLink" hook="sb-about"}}About{{/link-to}}<br/>
 </div>
