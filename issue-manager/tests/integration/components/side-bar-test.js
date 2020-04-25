@@ -16,12 +16,12 @@ moduleForComponent('side-bar', 'Integration | Component | side-bar', {
 	},
 });
 
-test('renders', function(assert) {
-	this.render(hbs`{{side-bar}}`);
+test('renders', async function(assert) {
+	await this.render(hbs`{{side-bar}}`);
 
-	waitUntil(() => page.titleText);
+	await waitUntil(() => page.titleText);
 	assert.equal(page.titleText, 'Side Bar');
-	assert.equal(page.homeText, 'Home');
-	assert.equal(page.summaryText, 'Summary');
-	assert.equal(page.aboutText, 'About');
+	assert.equal(page.homeLink.text, 'Home');
+	assert.equal(page.summaryLink.text, 'Summary');
+	assert.equal(page.aboutLink.text, 'About');
 });
